@@ -1,0 +1,409 @@
+/* Codigo CSS */
+
+/* Reseteo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    height: 100px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    padding: 1rem;
+    position: relative;
+}
+
+.header__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__marca {
+    height: 50px;
+    width: 50px;
+}
+
+.header__marca img {
+    height: 100%;
+}
+
+.nav__lista {
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 1rem;
+}
+
+.nav__enlace {
+    color: #0D623B;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.nav__item--orden {
+    order: 0;
+}
+
+.nav__enlace--activo {
+    background-color: #0D623B;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero */
+
+.hero {
+    padding: 1rem 1rem;
+}
+
+.hero__contenedor {
+    max-width: 1200px;
+    /* background-color: orange; */
+    /* background-image: url(../imagenes/sprinkle.svg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.hero__left, .hero__right {
+    width: 50%;
+}
+
+.hero__right {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__title {
+    font-size: 45px;
+}
+
+.hero__subtitle {
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+
+.hero__paragraph {
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+
+.hero__subtitle span {
+    color: #0D623B;
+}
+
+.hero__thumbs {
+    /* display: none; */
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 50px;
+}
+
+.hero__thumbs img {
+    width: 60px;
+}
+
+.hero__icono {
+    color: #0D623B;
+    font-size: 30px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 2rem 1rem;
+}
+
+.footer__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+    font-size: 12px;
+}
+
+.footer__copy a {
+    color: #0D623B;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+/* Menu Lateral */
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}
+
+/* Fin Menu lateral */
+
+
+/* Rewards */
+
+.rewards {
+    padding: 100px 1rem;
+    min-height: 50vh;
+    background-color: #000;
+    color: #CFB271;
+}
+
+.rewards__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rewards__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+
+.rewards__item {
+    border: 1px solid #CFB271;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.rewards__item i {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.rewards__item p {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+
+.rewards__item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.rewards__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rewards__item--img {
+    padding: 0;
+}
+
+.app {
+    padding: 100px 1rem;
+    display: flex;
+}
+
+.app__ladoA, .app__ladoB {
+    width: 50%;
+    min-height: 400px;
+}
+
+.app__ladoA {
+    /* background-color: orange; */
+    /* Lo recomendado si tienes una selector sin propiedades es que lo elimines, hasta que lo vayas a usar */
+
+    position: relative;
+}
+
+.app__ladoA h2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #CFB271;
+}
+
+.app__ladoB {
+    /* background-color: #CFB271; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__ladoB h2 {
+    margin-bottom: 2rem;
+    color: #0D623B;
+    font-size: 40px;
+}
+
+.app__ladoB a {
+    max-width: 200px;
+}
+
+.app__ladoB img {
+    width: 100%;
+}
+
+.app__iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/* Media Querys */
+/* Es importante que las medias esten al final de archivo CSS */
+/* Que las medias hay que tener un orden especifico */
+/* Aca trabajamos pensando en Desktop First */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+    }
+        
+    .header__contenedor {
+        flex-direction: column;
+    }
+
+    .hero__contenedor {
+        flex-direction: column;
+    }
+
+    .hero__left, .hero__right {
+        width: 100%;
+    }
+
+    .rewards__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px;
+    }
+}
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero__thumbs {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .hero__subtitle {
+        font-size: 50px;
+    }
+
+    .hero__left {
+        text-align: center;
+    }
+
+    .hero__right img {
+        max-width: 200px;
+    }
+
+    /* Menu lateral */
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: #0D623B;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+    }
+
+    .nav__lista {
+        background-color: rgb(224 224 224);
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .header__contenedor {
+        flex-direction: row;
+    }
+
+    /* Fin Menu lateral */
+
+    .rewards__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+
+    .app__ladoA, .app__ladoB {
+        width: 100%;
+        height: 400px;
+        min-height: auto;
+    }
+}
