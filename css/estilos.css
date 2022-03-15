@@ -143,6 +143,11 @@ ul {
 
 .hero__thumbs img {
     width: 60px;
+    transition: transform 1s;
+}
+
+.hero__thumbs img:hover {
+    transform: rotate(45deg) translateY(-30px);
 }
 
 .hero__icono {
@@ -344,6 +349,41 @@ main {
 
 .resize-none {
     resize: none;
+}
+
+/* Empresa */
+
+.empleado {
+    
+    padding: 1rem;
+    height: 100%;
+}
+
+.empleado__imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.col-md-4:nth-child(odd) .empleado {
+    background-color: #333;
+    color: #CFB271;
+}
+
+.col-md-4:nth-child(even) .empleado {
+    background-color: #eaeaea;
+    color: #000000;
+}
+
+.form-check-input:checked + label {
+    color: red;
+}
+
+::selection { /* Pesudoelemento */
+    background-color: yellow;
+}
+
+.form-control::placeholder {
+    color: #0D623B;
 }
 
 /* Media Querys */
