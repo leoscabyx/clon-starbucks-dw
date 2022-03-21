@@ -1,0 +1,278 @@
+/* Hero */
+
+.hero {
+    padding: 1rem 1rem;
+
+    &__contenedor {
+      max-width: 1200px;
+      /* background-color: orange; */
+      /* background-image: url(../imagenes/sprinkle.svg);
+      background-size: cover;
+      background-repeat: no-repeat; */
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      position: relative;
+    }
+}
+  
+
+  
+  .hero__left, .hero__right {
+    width: 50%;
+  }
+  
+  .hero__right {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero__title {
+    font-size: 45px;
+  }
+  
+  .hero__subtitle {
+    font-size: 60px;
+    margin-bottom: 2rem;
+  }
+  
+  .hero__paragraph {
+    line-height: 1.8;
+    padding-bottom: 2rem;
+  }
+  
+  .hero__subtitle span {
+    color: $miVariable;
+  }
+  
+  .hero__thumbs {
+    /* display: none; */
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    display: flex;
+    gap: 50px;
+  }
+  
+  .hero__thumbs img {
+    width: 60px;
+    transition: transform 1s;
+  }
+  
+  .hero__thumbs img:hover {
+    transform: rotate(45deg) translateY(-30px);
+  }
+  
+  .hero__icono {
+    color: $miVariable;
+    font-size: 30px;
+  }
+
+  /* Menu Lateral */
+
+.btn-open-sidebar {
+    display: none;
+  }
+  
+  .nav__item--oculto {
+    display: none;
+  }
+  
+  /* Fin Menu lateral */
+  
+  
+  /* Rewards */
+  
+  .rewards {
+    padding: 100px 1rem;
+    min-height: 50vh;
+    background-color: #000;
+    color: #CFB271;
+  }
+  
+  .rewards__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .rewards__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 40px;
+  }
+  
+  .rewards__item {
+    border: 1px solid #CFB271;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .rewards__item i {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .rewards__item p {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .rewards__item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .rewards__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .rewards__item--img {
+    padding: 0;
+  }
+  
+  .app {
+    padding: 100px 1rem;
+    display: flex;
+  }
+  
+  .app__ladoA, .app__ladoB {
+    width: 50%;
+    min-height: 400px;
+  }
+  
+  .app__ladoA {
+    /* background-color: orange; */
+    /* Lo recomendado si tienes una selector sin propiedades es que lo elimines, hasta que lo vayas a usar */
+  
+    position: relative;
+  }
+  
+  .app__ladoA h2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #CFB271;
+  }
+  
+  .app__ladoB {
+    /* background-color: #CFB271; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app__ladoB h2 {
+    margin-bottom: 2rem;
+    color: $miVariable;
+    font-size: 40px;
+  }
+  
+  .app__ladoB a {
+    max-width: 200px;
+  }
+  
+  .app__ladoB img {
+    width: 100%;
+  }
+  
+  .app__iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  main {
+    min-height: 100vh;
+  }
+  
+  /* After Class 3 - Aplicar estilos propios o pisar cositas de bootstrap */
+  
+  .titulo-mb {
+    margin-bottom: 2rem;
+  }
+  
+  .card-header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card-title {
+    color: $miVariable;
+  }
+  
+  .card-cta {
+    background-color: $miVariable;
+    color: #fff;
+  }
+  
+  .card-cta:hover {
+    color: #fff;
+  }
+  
+  .card-cta:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 98, 59, 0.25);
+  }
+  
+  .color-starbucks-principal {
+    color: $miVariable;
+  }
+  
+  .bg-starbucks-principal {
+    background-color: $miVariable;
+  }
+  
+  .resize-none {
+    resize: none;
+  }
+  
+  /* Empresa */
+  
+  .empleado {
+    
+    padding: 1rem;
+    height: 100%;
+  }
+  
+  .empleado__imagen {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .col-md-4:nth-child(odd) .empleado {
+    background-color: #333;
+    color: #CFB271;
+  }
+  
+  .col-md-4:nth-child(even) .empleado {
+    background-color: #eaeaea;
+    color: #000000;
+  }
+  
+  .form-check-input:checked + label {
+    color: red;
+  }
+  
+  ::selection { /* Pesudoelemento */
+    background-color: yellow;
+  }
+  
+  .form-control::placeholder {
+    color: $miVariable;
+  }

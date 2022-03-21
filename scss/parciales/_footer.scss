@@ -1,0 +1,26 @@
+/* Footer */
+
+.footer {
+    padding: 2rem 1rem;
+  }
+  
+  .footer__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__copy {
+    font-size: 12px;
+  }
+  
+  .footer__copy a {
+    color: $miVariable;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }

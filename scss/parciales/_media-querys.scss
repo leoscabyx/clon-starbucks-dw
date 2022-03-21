@@ -1,0 +1,111 @@
+/* Media Querys */
+/* Es importante que las medias esten al final de archivo CSS */
+/* Que las medias hay que tener un orden especifico */
+/* Aca trabajamos pensando en Desktop First */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+    }
+        
+    .header__contenedor {
+        flex-direction: column;
+    }
+  
+    .hero__contenedor {
+        flex-direction: column;
+    }
+  
+    .hero__left, .hero__right {
+        width: 100%;
+    }
+  
+    .rewards__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px;
+    }
+  }
+  
+  /* Movil */
+  @media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+  
+    .hero__thumbs {
+        display: none;
+    }
+  
+    .hero__title {
+        font-size: 30px;
+    }
+  
+    .hero__subtitle {
+        font-size: 50px;
+    }
+  
+    .hero__left {
+        text-align: center;
+    }
+  
+    .hero__right img {
+        max-width: 200px;
+    }
+  
+    /* Menu lateral */
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: $miVariable;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #fff;
+    }
+  
+    .nav__lista {
+        background-color: rgb(224, 224, 224);
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+  
+    #sidebar:target {
+        transform: translateX(0);
+    }
+  
+    .nav__item--oculto {
+        display: block;
+    }
+  
+    .header__contenedor {
+        flex-direction: row;
+    }
+  
+    /* Fin Menu lateral */
+  
+    .rewards__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+  
+    .app {
+        flex-direction: column;
+    }
+  
+    .app__ladoA, .app__ladoB {
+        width: 100%;
+        height: 400px;
+        min-height: auto;
+    }
+  }

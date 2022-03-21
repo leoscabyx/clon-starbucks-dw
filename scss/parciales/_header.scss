@@ -1,0 +1,60 @@
+.header {
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .header__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__marca {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .header__marca img {
+    height: 100%;
+  }
+  
+  .nav__lista {
+    display: flex;
+  }
+  
+  .nav__item {
+    margin-left: 1rem;
+  }
+  
+  .nav__enlace {
+    color: $miVariable;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+  
+  .nav__enlace:hover {
+    color: $miVariable;
+  }
+  
+  .nav__enlace--activo:hover {
+    color: #fff;
+  }
+  
+  .nav__item--orden {
+    order: 0;
+  }
+  
+  .nav__enlace--activo {
+    background-color: $miVariable;
+    color: #fff;
+    border-radius: 5px;
+  }
